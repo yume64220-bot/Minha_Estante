@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17131f">
+  <meta name="description" content="Organize sua coleção de mangás, manhwas, webtoons, livros e muito mais com o Minha Estante.">
+
+  <title>Minha Estante — Sua coleção em um só lugar</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --fundo: #17131f;
+      --painel: #211b2b;
+      --rosa: #f3a5ce;
+      --texto: #fff7fc;
+      --suave: #c8bdce;
+      --borda: #403348;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, sans-serif;
+      background:
+        radial-gradient(ellipse at top, #38213e 0%, transparent 55%),
+        var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+    }
+
+    header {
+      max-width: 1000px;
+      margin: auto;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .marca {
+      color: var(--rosa);
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    main {
+      max-width: 850px;
+      margin: auto;
+      padding: 45px 22px 65px;
+      text-align: center;
+    }
+
+    .icone {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 22px;
+      border: 1px solid var(--borda);
+      border-radius: 30px;
+      display: grid;
+      place-items: center;
+      background: var(--painel);
+      font-size: 3rem;
+    }
+
+    .etiqueta {
+      display: inline-block;
+      padding: 5px 13px;
+      border: 1px solid var(--borda);
+      border-radius: 999px;
+      color: var(--rosa);
+      font-size: .85rem;
+    }
+
+    h1 {
+      margin: 18px 0 12px;
+      font-size: clamp(2.2rem, 8vw, 4rem);
+      line-height: 1.1;
+    }
+
+    .descricao {
+      max-width: 620px;
+      margin: 0 auto;
+      color: var(--suave);
+      font-size: 1.08rem;
+    }
+
+    .acoes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px 0 12px;
+    }
+
+    .botao {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 750;
+      border: 1px solid var(--borda);
+    }
+
+    .principal {
+      color: #271521;
+      background: var(--rosa);
+      border-color: var(--rosa);
+    }
+
+    .secundario {
+      color: var(--texto);
+      background: var(--painel);
+    }
+
+    .aviso {
+      color: var(--suave);
+      font-size: .85rem;
+    }
+
+    .recursos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 15px;
+      margin-top: 55px;
+      text-align: left;
+    }
+
+    .recurso {
+      padding: 20px;
+      border: 1px solid var(--borda);
+      border-radius: 18px;
+      background: var(--painel);
+    }
+
+    .recurso h2 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+
+    .recurso p {
+      margin: 0;
+      color: var(--suave);
+      font-size: .95rem;
+    }
+
+    footer {
+      padding: 24px;
+      border-top: 1px solid var(--borda);
+      color: var(--suave);
+      text-align: center;
+      font-size: .9rem;
+    }
+
+    footer a {
+      color: var(--rosa);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <span class="marca">Minha Estante</span>
+  </header>
+
+  <main>
+    <div class="icone" aria-hidden="true">📚</div>
+
+    <span class="etiqueta">Aplicativo para Android</span>
+
+    <h1>Sua coleção.<br>Sua estante.</h1>
+
+    <p class="descricao">
+      Organize seus mangás, manhwas, manhuas, webtoons,
+      novels, livros e outras obras em um só lugar.
+      Acompanhe suas leituras e mantenha sua coleção organizada.
+    </p>
+
+    <div class="acoes">
+      <a
+        class="botao principal"
+        href="https://github.com/yume64220-bot/minha-estante-downloads/releases/latest/download/Minha-Estante.apk"
+      >
+        Baixar Minha Estante
+      </a>
+
+      <a
+        class="botao secundario"
+        href="https://github.com/yume64220-bot/minha-estante-downloads/releases/latest"
+      >
+        Ver versão e novidades
+      </a>
+    </div>
+
+    <p class="aviso">
+      Download gratuito para Android · Arquivo APK
+    </p>
+
+    <section class="recursos" aria-label="Recursos do aplicativo">
+      <article class="recurso">
+        <h2>📖 Organize sua coleção</h2>
+        <p>Reúna suas obras e mantenha as informações organizadas.</p>
+      </article>
+
+      <article class="recurso">
+        <h2>♡ Lista de desejos</h2>
+        <p>Registre as obras que você deseja comprar ou começar a ler.</p>
+      </article>
+
+      <article class="recurso">
+        <h2>🏷️ Do seu jeito</h2>
+        <p>Organize suas obras usando categorias, coleções e tags.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Minha Estante · Organize suas histórias favoritas.</p>
+    <p>
+      <a href="https://github.com/yume64220-bot/minha-estante-downloads/releases">
+        Histórico de versões
+      </a>
+      ·
+      <a href="https://github.com/yume64220-bot/minha-estante-downloads">
+        GitHub
+      </a>
+    </p>
+  </footer>
+</body>
+</html>
